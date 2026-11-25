@@ -1,0 +1,10 @@
+{
+  "go_version": "go1.27.0",
+  "goos": "windows",
+  "goarch": "amd64",
+  "cpu_model": "AMD Ryzen 5 7500F 6-Core Processor",
+  "cores": 12,
+  "git_commit": "",
+  "config_path": "configs/bench.json",
+  "start_time": "2026-11-23T09:14:32.9634337Z"
+}

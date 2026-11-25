@@ -1,0 +1,38 @@
+{
+    "benchmarks": ["storage", "rp-sync", "disclosure", "epoch", "lookup"],
+    "out": "results/",
+    "seed": 1,
+    "reps": 10,
+    "warmup": 2,
+    "sweep": {
+      "N": [903000000],
+      "r": [0.009634551],
+      "k": [12500],
+      "B": [4096],
+      "m": [1],
+      "t": [4],
+      "placement": ["uniform", "clustered"]
+    },
+    "overrides": {
+      "storage": {
+        "B": [512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]
+      },
+      "rp-sync": {
+        "B": [512, 4096, 65536],
+        "placement": ["uniform"]
+      },
+      "disclosure": {
+        "B": [512],
+        "t": [1, 2, 4, 5, 8],
+        "placement": ["uniform"]
+      },
+      "epoch": {
+        "k": [12500, 50000, 100000],
+        "B": [512, 4096, 65536],
+        "placement": ["uniform"]
+      },
+      "lookup": {
+        "B": [512, 4096, 65536]
+      }
+    }
+  }
